@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <!-- lista não ordenada -->
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+  </ul>
+  
+  <!-- lista ordenada -->
+  <ol type="1"> <!-- Corrigido type="#" para type="1" -->
+    <li>item 1</li>
+    <li>item 2</li>
+  </ol>
+  
+  <!-- lista de descrição -->
+  <dl>
+    <dt>café</dt>
+    <dd>bebida quente</dd>
+  </dl>
+  
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background: red;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  </style>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li> <!-- Corrigido "Abount" para "About" -->
+      <li><a href="#">Products</a></li> <!-- Corrigido a tag de ancoragem -->
+    </ul>
+  </nav>
+</body>
+</html>
