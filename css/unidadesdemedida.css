@@ -1,0 +1,19 @@
+/* Unidades de medida */
+1em /* multiplica pelo valor do pai */
+1px /* pixel */
+1rem /* multiplica baseado no root */
+% /* porcentagem da resolução */
+vw /* 1% a 100% do viewport width */
+vh /* 1% a 100% do viewport height */
+vmin /* relativo à menor dimensão do viewport */
+vmax /* relativo à maior dimensão do viewport */
+
+/* Formatando texto */
+direction: rtl; /* direção do texto */
+letter-spacing: 5px; /* espaçamento entre letras */
+word-spacing: 5px; /* espaçamento de palavras */
+line-height: 25px; /* espaçamento entre linhas */
+text-align: left; /* alinhamento do texto */
+text-decoration: underline; /* decora texto */
+text-shadow: 1px 1px 2px black; /* sombra */
+text-transform: uppercase; /* transforma texto */
