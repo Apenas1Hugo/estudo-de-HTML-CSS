@@ -1,60 +1,37 @@
-*{} <!-- tudo-->
+* {} /* tudo */
 
-nome tag{} <!--seletor de tag-->
+/* Seletores básicos */
+tag {} /* seletor de tag */
+.nomeclasse {} /* seletor de classe */
+pai > filho {} /* seletor filho */
 
-.nomeclasse {} <!--seletor de classe-->
+/* Seletores de relacionamento */
+.pai p + h1 {} /* seletor irmãos: um p logo em seguida um h1 ambos filhos de pai */
+.pai p ~ h1 {} /* seletor de todos h1 após p, ambos filhos de pai */
 
-maior que  {}  <!--seletor filho-->
+/* Seletores de atributo */
+[attr] {} /* seletor de atributo base */
+[attr|=txt] {} /* seletor de atributo que começa com txt */
+[attr^=value] {} /* começa com */
+[attr$=value] {} /* termina com */
+[attr*=value] {} /* contém */
 
-.pai p+h1{} <!-- sletor irmaos /um p logo em seguida um h1 ambos filhos de pai-->
+/* Pseudo-classes */
+:hover {} /* passa o mouse por cima */
+:link {} /* link nunca visitado */
+:visited {} /* link visitado */
+:active {} /* foi clicado */
+:focus {} /* em foco */
+:disabled {} /* desativado */
+:enabled {} /* ativado */
+:checked {} /* marcado */
+:required {} /* requerido */
 
-.pai p~h1 {}<!-- seletor de todos h1 pos p-->
-
-	<!-- seletores de atributo -->
-
-[] <!-- seletor de atributo base-->
-
-| txt <!-- seletor de atributo que tem que começar com txt -->
-
-^= <!-- começa com -->
-
-$= <!-- termina com -->
-
-*= <!-- contem -->
-
-	<!-- pseudo calsses -->
-
-hover: <!-- passa por mouse cima -->
-
-transition: <!-- transição -->
-
-link <!-- nunca visitado -->
-
-visited <!-- link visitado -->
-
-active <!-- foi clicado -->
-
-focus <!-- em focuo -->
-
-disabled <!-- desativo -->
-
-enabled <!-- ativo -->
-
-checked <!-- chequado -->
-
-required <!-- requerido -->
-
-	<!-- outros seletores de css -->
-not() <!-- negação -->
-
-nth-child(indice) <!-- seleção de multiplos filhos -->
-
-after <!-- pseudo elemento de depois -->
-
-before <!-- pseudo elemento de antes -->
-
-first-letter <!-- primeira letra -->
-
-first-line <!-- primeira linha -->
-
-selection <!-- selecionados -->
+/* Outros seletores de CSS */
+:not(selector) {} /* negação */
+:nth-child(indice) {} /* seleção de múltiplos filhos */
+::after {} /* pseudo-elemento de depois */
+::before {} /* pseudo-elemento de antes */
+::first-letter {} /* primeira letra */
+::first-line {} /* primeira linha */
+::selection {} /* selecionados */

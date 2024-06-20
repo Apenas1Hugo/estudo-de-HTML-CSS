@@ -1,0 +1,30 @@
+/* Reseta as margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define um clearfix para .grid */
+.grid::after {
+    content: ' ';
+    display: block;
+    clear: both; /* Limpa os floats */
+}
+
+/* Estilos para as colunas da grid */
+.grid .col {
+    display: block; /* Bloco */
+    width: 300px;
+    height: 300px;
+    background: red; 
+    float: left; /* Flutuar para a esquerda */
+}
+
+/* Cores em HTML */
+
+/* #FFFFFF  hexadecimal 
+   FF<-red FF<-green FF<-blue */
+
+/* rgb(0,0,0) de 0 a 255 red, green, blue */
+
+/* rgba(0,0,0,0) o último valor é opacidade */
