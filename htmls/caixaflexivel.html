@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 24px;
+        }
+
+        p {
+            margin: 0 0 24px;
+        }
+
+        .two-columns {
+            display: flex;
+        }
+
+        .two-columns .col {
+            background: lawngreen;
+            margin: 15px;
+            padding: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .gallery .img {
+            flex: 1 0 20%;
+            height: 50px;
+            background: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="two-columns">
+        <div class="col">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores, consequatur cum autem nam numquam? Assumenda at itaque dolores quos placeat quidem ad iusto iure, repellendus beatae saepe rem. Fuga.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse error ad deleniti temporibus. Sapiente accusantium inventore eos. Nesciunt similique quae veritatis provident eaque voluptates unde saepe necessitatibus in aliquam.</p>
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, eos sed blanditiis magni eveniet dolorem, laboriosam accusantium adipisci libero, ducimus nostrum? Magni quia magnam consequuntur possimus impedit minima aliquid quasi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur repellendus fugit doloribus porro quia deserunt adipisci id quidem hic dignissimos possimus, architecto alias velit cupiditate voluptatibus! Ea, ipsa quisquam?</p>
+            <div class="gallery">
+                <div class="img"></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
