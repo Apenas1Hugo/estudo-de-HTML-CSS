@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Border Radius e Box Shadow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #ff2600;
+            margin: 20px 0;
+        }
+
+        /* Border Radius Examples */
+        .box.radius-small {
+            border-radius: 10px;
+        }
+
+        .box.radius-large {
+            border-radius: 50px;
+        }
+
+        .box.radius-circle {
+            border-radius: 50%;
+        }
+
+        /* Box Shadow Examples */
+        .box.shadow-small {
+            box-shadow: 2px 2px 5px rgb(255, 255, 255);
+        }
+
+        .box.shadow-large {
+            box-shadow: 10px 10px 20px rgb(255, 255, 255);
+        }
+
+        .box.shadow-colored {
+            box-shadow: 5px 5px 15px rgb(43, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo de Border Radius e Box Shadow</h1>
+        <p>A propriedade <code>border-radius</code> permite arredondar os cantos de uma caixa.</p>
+        
+        <div class="box radius-small"></div>
+        <p><code>border-radius: 10px;</code></p>
+        
+        <div class="box radius-large"></div>
+        <p><code>border-radius: 50px;</code></p>
+        
+        <div class="box radius-circle"></div>
+        <p><code>border-radius: 50%;</code> (forma um círculo)</p>
+        
+        <p>A propriedade <code>box-shadow</code> adiciona uma sombra à caixa.</p>
+        
+        <div class="box shadow-small"></div>
+        <p><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);</code></p>
+        
+        <div class="box shadow-large"></div>
+        <p><code>box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);</code></p>
+        
+        <div class="box shadow-colored"></div>
+        <p><code>box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.6);</code> (sombra colorida)</p>
+    </div>
+</body>
+</html>
